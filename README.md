@@ -24,4 +24,13 @@ You can then encrypt your function by -
 ```c
 decrypt((char*)&function_name,(char*)&dummy,"mykey");
 ``` 
-To compile use `make`.
+To compile use `make`.  
+Then run `python ./encrypt.py file_name encryption_key` to encrypt the binary.
+
+Now if you run the binary it works as it should have.
+```bash
+root@kali:~/funcryptor# python encrypt.py test mykey
+[+] Done
+root@kali:~/funcryptor# ./test 
+This is the encrypted function
+```
