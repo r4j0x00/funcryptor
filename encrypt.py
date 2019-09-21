@@ -28,7 +28,7 @@ def encrypt(file_path,key):
 
 def main():
     if len(argv)<3:
-        print("[-] Usage: python3 {0} file_name encryption_key".format(argv[0]))
+        print("[-] Usage: python {0} file_name encryption_key".format(argv[0]))
         exit(1)
     if encrypt(argv[1],argv[2]):
         print("[+] Done")
