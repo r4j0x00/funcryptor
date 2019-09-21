@@ -10,7 +10,7 @@ pip install pyelftools
 
 ## Usage
 An example program is shown in test.c 
-you need to include "funcryptor.h" in your c program and prepend `encrypted` to the function you wan't to encrypt.  
+you need to include "funcryptor.h" in your c program and prepend `encrypted` to the function you want to encrypt.  
 ```c
 encrypted void function_name() 
 ```
