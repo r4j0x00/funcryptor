@@ -20,7 +20,7 @@ This should be followed by a dummy function. This is used to calculate the funct
 encrypted void dummy() {}
 ```
   
-You can then encrypt your function by -
+You can then decrypt your function by -
 ```c
 decrypt((char*)&function_name,(char*)&dummy,"mykey");
 ``` 
