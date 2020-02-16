@@ -7,6 +7,6 @@ encrypted void enc_function() {
 encrypted void dummy() {}
 
 int main() {
-	decrypt((char*)&enc_function,(char*)&dummy,"mykey");
+	decrypt(enc_function, dummy, "mykey");
 	enc_function();
 }

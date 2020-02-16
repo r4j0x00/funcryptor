@@ -2,6 +2,7 @@
 #include <sys/mman.h>
 #include <unistd.h>
 #include <string.h>
+#define decrypt(function_name, dummy, key) decrypt_mem((char*)&function_name, (char*)&dummy, key)
 
 int mp(void *addr) {
     int size = getpagesize();
@@ -20,7 +21,7 @@ void xormem(char *addr,char key[],int size) {
 	}
 }
 
-void decrypt(char* addr,char* dummy,char key[]) {
+void decrypt_mem(char* addr,char* dummy,char key[]) {
 	mp((void*)addr);
 	xormem(addr,key,dummy-addr);
 }
