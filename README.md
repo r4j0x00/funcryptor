@@ -22,7 +22,7 @@ encrypted void dummy() {}
   
 You can then decrypt your function by -
 ```c
-decrypt((char*)&function_name,(char*)&dummy,"mykey");
+decrypt(function_name, dummy, "mykey");
 ``` 
 To compile use `make`.  
 Then run `python ./encrypt.py file_name encryption_key` to encrypt the binary.
