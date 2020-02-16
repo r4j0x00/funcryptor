@@ -25,6 +25,7 @@ void restore(void* addr)
 void xormem(char *addr,char key[],int size) {
 	int keylen = strlen(key);
 	if (keylen == 0){return ;}
+	assert(keylen <= size);
 	for (int i=0;i<size;i++) {
 		addr[i] = addr[i] ^ key[i%keylen];
 	}
