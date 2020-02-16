@@ -4,5 +4,6 @@
     void xormem(char *addr,char key[],int size);
     void decrypt_mem(char* addr,char* dummy,char key[]);
     int mp(void *addr);
+    void restore(void* addr);
 #endif
 #define encrypted __attribute__((section(".encrypted")))
